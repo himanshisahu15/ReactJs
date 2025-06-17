@@ -1,0 +1,21 @@
+body {
+  font-family: 'Times New Roman', Times, serif;
+  margin: 0;
+  padding: 4px 0;
+}
+
+.product {
+  background-color:#fbfbfc;
+  min-width: 1000px;
+  width: fit-content;
+  margin: 0 auto;
+  max-height: 570px;
+  overflow-y: auto;
+  overflow-x: hidden;
+  padding: 10px;
+  margin-top: 30px;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.06);
+  margin-bottom: 30px;
+
+}

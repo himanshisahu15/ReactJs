@@ -1,0 +1,37 @@
+.product-date {
+  background-color: #2b356b;
+  color: white;
+  padding: 10px;
+  border-radius: 10px;
+  text-align: center;
+  min-width: 150px;
+  height: 150px;
+  box-shadow: 0 4px 10px rgba(63, 81, 181, 0.2);
+}
+
+.month {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.day {
+  font-size: 25px;
+  font-weight: bold;
+ border-radius: 20px;
+margin-top: 10px;
+
+}
+
+.year {
+  font-size: 25px;
+  font-weight: bold;
+  border-radius: 20px;
+  margin-top: 30px;
+}
+
+.date{
+    background-color: white;
+    color: black;
+     border-radius: 10px;
+     padding: 3px;
+}

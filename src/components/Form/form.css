@@ -1,0 +1,83 @@
+body {
+  margin: 0;
+  background: #f2f4f8;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.file-name {
+  margin-top: 8px;
+  text-align: center;
+}
+
+.mainForm {
+  background-color: #fff;
+  width: 800px;
+  padding: 40px 50px;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+  margin: 0 auto;
+  margin-top: 40px;
+  overflow: auto;
+  position: relative;
+}
+
+/* .form-wrapper {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ebedf0;
+  min-height: 70vh;
+  margin-top: 50px;
+} */
+
+.datapicker {
+  width: 100%;
+}
+
+.upload-img {
+  width: 300px;
+  padding: 22px;
+  font-size: 15px;
+  margin-left: 200px;
+  
+}
+
+.ant-form-item-label {
+  color: #090909;
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.ant-input,
+.ant-picker {
+  padding: 12px;
+  font-size: 15px;
+  border-radius: 6px;
+  border: 1px solid #d9d9d9;
+}
+
+.ant-btn-primary {
+  background-color: #1677ff;
+  height: 45px;
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 6px;
+}
+
+.rainbow-btn {
+  background: linear-gradient(90deg, orange, yellow, rgb(189, 242, 189));
+  background-size: 400% 400%;
+  color: rgb(32, 28, 28) !important;
+  border: none;
+  font-weight: bold;
+  animation: gradientShift 5s ease infinite;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+@keyframes gradientShift {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}

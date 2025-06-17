@@ -1,0 +1,29 @@
+/* .pie-chart-wrapper {
+  width: 100%;
+  max-width: 500px;
+  margin: 20px auto;
+   background: transparent;
+  box-shadow: none;
+  padding: 0;
+  margin: 0 auto;
+  width: 500px;
+}
+ */
+
+.pie-chart-title {
+  text-align: center;
+  margin-bottom: 1rem;
+  font-weight: 500;
+  color: #333;
+}
+/* Remove or comment out this: */
+/* width: 500px; */
+
+.pie-chart-wrapper,
+.bar-chart-card {
+  width: 100%;  /* allow flexbox to control width */
+  background: transparent;
+  box-shadow: none;
+  padding: 0;
+  margin: 0;
+}

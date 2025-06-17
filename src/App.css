@@ -1,0 +1,70 @@
+/* #root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+} */
+
+html, body {
+  margin: 0;
+  padding: 0;
+  background-color: #f3f1f8;
+  box-sizing: border-box;
+  /* min-height: 100vh; */
+  overflow-x: hidden;
+}
+
+.container {
+  max-width: 2000px;
+  margin: 0 auto;
+  padding: 20px;
+    /* max-height: 100vh; */
+    width: 100%;
+    box-sizing: border-box;
+  /* overflow-y: auto; */
+}
+
+.title {
+  text-align: center;
+  margin-top: 30px;
+  font-size: 35px;
+  margin-bottom: 30px;
+ 
+}
+
+.form-title {
+  background-color:    #2b356b;
+  text-align: center;
+  color: white;
+  margin-top: -20px;
+  padding: 20px;
+  font-size: 36px;
+  font-weight: bold;
+  /* border-radius: 12px; */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease-in-out;
+}
+/* .charts-row {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 40px;
+  margin: 40px 50px; 
+} */
+
+/* Bar chart takes more width and stays centered */
+.chart-container{
+  width: 1600px;
+  margin-left: 70px;
+}
+
+/* Pie chart takes less width */
+/* .chart-pie {
+  flex: 1 1 30%;
+  max-width: 400px;
+  min-width: 300px;
+} */
+.ant-card-body{
+  margin: 0 !important;
+}
