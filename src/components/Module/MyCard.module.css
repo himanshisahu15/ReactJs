@@ -1,0 +1,73 @@
+.mycard {
+  background-color: #fff8ff;
+  border-radius: 25px;
+  overflow: hidden;
+  box-shadow: 0 8px 25px rgba(120, 0, 150, 0.1);
+  transition: transform 0.3s ease;
+ font-family:Arial, Helvetica, sans-serif;
+}
+.mycard:hover {
+  transform: scale(1.02);
+}
+
+.mycardBody {
+  padding: 30px 20px;
+  text-align: center;
+}
+
+.mycardTitle {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #333;
+  margin-top: 10px;
+}
+
+.strong {
+  color: #8a2be2;
+}
+
+.mycardDesc {
+  font-size: 1rem;
+  color: #444;
+  margin: 20px auto;
+  max-width: 90%;
+  line-height: 1.8;
+}
+
+.myCardLists {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  list-style: none;
+  padding: 0;
+  margin: 40px ;
+  gap: 20px;
+  margin-bottom: 30px;
+  margin-top: 20px;
+}
+
+.myCardList {
+  background-color: white;
+  text-align: center;
+  color: #2c3e50;
+  border-radius: 20px;
+  padding: 10px;
+  width: 120px;
+}
+.myCardLists :hover{
+   transform: scale(1.02);
+}
+
+.mycardNum {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #4a148c;
+}
+
+.mycardText {
+  font-size: 0.9rem;
+  letter-spacing: 2px;
+  color: #5c6bc0;
+  margin-top: 10px;
+}
