@@ -1,12 +1,66 @@
-# React + Vite
+# React Login App with Material UI
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is a responsive login system built with **React** and **Material UI (MUI)**. It includes email/password validation, error handling, login persistence using `localStorage`, and a responsive navigation bar with logout functionality.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Features
 
-## Expanding the ESLint configuration
+- 📥 Login form with validation
+- ⛔ Error modal with portal and close handling
+- 🔒 Persistent login with `localStorage`
+- 🧾 `useEffect` usage for side effects (e.g., authentication, input debounce)
+- 📱 Responsive AppBar with drawer for mobile
+- ✅ Clean component structure using functional components and hooks
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## 🧩 Project Structure
+
+src/
+├── App.jsx
+├── index.js
+├── components/
+│ ├── Form/
+│ │ ├── Form.jsx
+│ │ └── Form.module.css
+│ ├── Welcome/
+│ │ ├── Welcome.jsx
+│ │ └── Welcome.module.css
+│ ├── NavBar/
+│ │ └── Navbar.jsx
+│ └── Error/
+│ ├── ErrorModule.jsx
+│ └── ErrorModule.module.css
+
+---
+
+🧠 Key Hooks Used
+
+useState
+Used for:
+Managing form input
+Tracking login state
+Error messages
+
+useEffect
+Used in 3 ways:
+✅ Run once on mount to check localStorage
+✅ Run on login/logout state change to log user info
+✅ Debounce user input for email (5-second delay after typing stops)
+
+---
+
+💡 Important Notes
+ErrorModule uses React Portal — be sure to include this in public/index.html:
+<div id="errormodule"></div>
+All styling is done using CSS Modules + Material UI.
+The AppBar becomes a Drawer on small screen devices.
+
+---
+
+🔐 Local Storage Usage
+isLogin: "true" or "false"
+email: user's email stored on successful login
+Automatically clears on logout
+
