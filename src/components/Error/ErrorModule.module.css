@@ -1,0 +1,52 @@
+/* App.css or your preferred CSS file */
+
+
+.modalOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000; /* Ensure it's on top */
+}
+
+.modalContent {
+  background-color: white;
+  border-radius: 8px;
+  text-align: center;
+  width: 500px;
+  height: 300px;
+}
+.errTitle{
+background-color: rgb(226, 237, 244);
+padding: 10px;
+color: red;
+margin-top: 0px;
+font-size: 30px;
+}
+
+.errMessage{
+font-size: 20px;
+padding: 10px;
+}
+
+.errBtn{
+width: 100px;
+padding: 10px;
+font-size: 20px;
+border-radius: 5px;
+background-color: rgb(20, 20, 253);
+color: white;
+font-weight: bold;
+border: none;
+}
+.logo{
+  padding: 15px;
+margin: auto;
+/* height: 100px;
+width: 100px; */
+}
