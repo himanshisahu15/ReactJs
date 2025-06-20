@@ -46,7 +46,7 @@ export default function ProductBarChart({ products }) {
           <CartesianGrid strokeDasharray="3 3" />
           <XAxis dataKey="name" />
           <YAxis allowDecimals={false} />
-          <Tooltip />
+          <Tooltip /> 
           <Legend />
           <Bar
             dataKey="pv"

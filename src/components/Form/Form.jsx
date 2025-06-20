@@ -3,6 +3,8 @@ import 'antd/dist/reset.css';
 import { Form, Button, Input, DatePicker, Upload } from 'antd';
 import { UploadOutlined } from '@ant-design/icons';
 import './form.css';
+import manImg from '../../assets/man.png';
+import womanImg from '../../assets/women.png';
 
 export default function Demo({ onFormSubmit }) {
   const [form] = Form.useForm();
@@ -21,17 +23,21 @@ export default function Demo({ onFormSubmit }) {
       date: formData.date?.format('YYYY-MM-DD'),
       image: imageFile ? URL.createObjectURL(imageFile) : '',
     };
+    console.log(productData);
     onFormSubmit(productData);
     form.resetFields();
     setImageFile(null);
   };
 
   const onValuesChange = (changedValues, allValues) => {
+    console.log(changedValues);
+    console.log(allValues);
     setFormData(allValues);
   };
 
   return (
     <div className='form-wrapper'>
+       <img src={manImg} alt="Man Illustration" className='form-man' />
       <div className='mainForm'>
         <Form
           form={form}
@@ -73,7 +79,7 @@ export default function Demo({ onFormSubmit }) {
                 return false;//prevent auto upload
               }}
             >
-              <Button className='upload-img' icon={<UploadOutlined />}>Upload Image</Button>
+              <Button className='upload-img rainbow-btn' icon={<UploadOutlined />}>Upload Image</Button>
             </Upload>
             {imageFile && <div className='file-name'>{imageFile.name}</div>}
           </Form.Item>
@@ -85,6 +91,7 @@ export default function Demo({ onFormSubmit }) {
           </Form.Item>
         </Form>
       </div>
+       <img src={womanImg} alt="Woman Illustration" className='form-woman' />
     </div>
   );
 }

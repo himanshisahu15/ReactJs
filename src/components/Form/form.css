@@ -12,24 +12,27 @@ body {
 .mainForm {
   background-color: #fff;
   width: 800px;
-  padding: 40px 50px;
+  padding: 50px 50px;
   border-radius: 12px;
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
   margin: 0 auto;
-  margin-top: 40px;
+  margin-top: 3px;
   overflow: auto;
   position: relative;
+  z-index: 2;
 }
 
-/* .form-wrapper {
+
+.form-wrapper {
   position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: #ebedf0;
-  min-height: 70vh;
-  margin-top: 50px;
-} */
+  min-height: 80vh;
+  margin-top: -50px;
+  overflow: hidden;
+}
 
 .datapicker {
   width: 100%;
@@ -76,8 +79,42 @@ body {
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
+.form-man {
+  position: absolute;
+  left: 170px; 
+  bottom: 60px;
+ 
+  height: auto;
+  width: 350px;
+}
+
+.form-woman {
+  position: absolute;
+  right: 170px; 
+  bottom: -10px;
+ 
+  height: auto;
+  width: 350px;
+}
+
+
 @keyframes gradientShift {
   0% { background-position: 0% 50%; }
   50% { background-position: 100% 50%; }
   100% { background-position: 0% 50%; }
+}
+/* Fix upload button responsiveness */
+@media (max-width: 768px) {
+  .upload-img {
+    width: 100% !important;
+    margin-left: 0 !important;
+    padding: 15px;
+    font-size: 14px;
+  }
+
+  /* Hide illustration images on tablets and smaller screens */
+  .form-man,
+  .form-woman {
+    display: none !important;
+  }
 }

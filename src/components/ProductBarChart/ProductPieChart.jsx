@@ -1,18 +1,17 @@
-import React from 'react';
 import { PieChart, Pie, Cell, Tooltip, ResponsiveContainer } from 'recharts';
-import { Card, Typography } from 'antd';
+import {  Typography } from 'antd';
 import './ProductPieChart.css';
 
 const { Title } = Typography;
 
-// Custom color palette (12 months)
+
 const COLORS = [
   '#0088FE', '#00C49F', '#FFBB28', '#FF8042',
   '#AF19FF', '#FF4560', '#26A69A', '#EF6C00',
   '#AB47BC', '#5C6BC0', '#009688', '#F50057'
 ];
 
-// Month names for display
+
 const MONTHS = [
   'Jan', 'Feb', 'Mar', 'Apr',
   'May', 'Jun', 'Jul', 'Aug',
@@ -20,7 +19,7 @@ const MONTHS = [
 ];
 
 export default function ProductPieChart({ products }) {
-  // Prepare monthly product count data
+ 
   const monthCounts = Array(12).fill(0);
 
   products.forEach((product) => {
@@ -35,9 +34,8 @@ export default function ProductPieChart({ products }) {
 
   return (
    <div className="bar-chart-container">
-    <h2>Product Launch Per Year</h2>
-      <Title level={4} className="pie-chart-title">Product Launch by Month</Title>
-      <ResponsiveContainer width="100%" height={300}>
+      <Title level={3} className="pie-chart-title">Product Launch by Month</Title>
+      <ResponsiveContainer width="100%" height={400}>
         <PieChart>
           <Pie
             data={pieData}
@@ -45,7 +43,7 @@ export default function ProductPieChart({ products }) {
             nameKey="name"
             cx="50%"
             cy="50%"
-            outerRadius={100}
+            outerRadius={200}
             fill="#8884d8"
             label
           >
