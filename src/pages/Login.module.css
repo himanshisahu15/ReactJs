@@ -1,0 +1,79 @@
+/* src/pages/Login.module.css */
+
+.container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(to right, #d9e2ec, #f0f4f8);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.form {
+  background: rgba(255, 255, 255, 0.9);
+  padding: 40px 30px;
+  border-radius: 16px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  width: 90%;
+  max-width: 500px;
+  transition: all 0.3s ease-in-out;
+  height: 400px;
+}
+
+.title {
+  text-align: center;
+  margin-bottom: 25px;
+  color: #1e1e2f;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.field {
+  margin-bottom: 18px;
+  display: flex;
+  flex-direction: column;
+}
+
+.field label {
+  margin-bottom: 6px;
+  font-weight: 500;
+  color: #333;
+}
+
+.field input {
+  padding: 22px;
+  border: 1px solid #ccd6dd;
+  border-radius: 8px;
+  font-size: 15px;
+  transition: border-color 0.2s;
+  margin: 15px 0px;
+}
+
+.field input:focus {
+  outline: none;
+  border-color: #1e1e2f;
+  box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.2);
+}
+
+.button {
+  width: 100%;
+  padding: 22px;
+  background-color: #1e1e2f;
+  border: none;
+  border-radius: 8px;
+  color: white;
+  font-weight: 600;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.2s, transform 0.1s;
+}
+
+.button:hover {
+  background-color: #292947;
+  transform: translateY(-1px);
+}
+
+.button:active {
+  background-color: #1e3a8a;
+  transform: scale(0.98);
+}

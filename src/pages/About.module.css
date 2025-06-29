@@ -1,0 +1,40 @@
+.container {
+  padding: 40px;
+  max-width: 600px;
+  margin: 0 auto;
+ background-color:  #f0f4ff;;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+
+  text-align: center;
+  margin-top: 50px;
+}
+
+h2 {
+  font-size: 28px;
+  color: #1f1f22;
+  margin-bottom: 20px;
+}
+
+img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 15px;
+  border: 2px solid #2a3034;
+}
+
+h3 {
+  font-size: 22px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+p {
+  font-size: 16px;
+  color: #555;
+  margin: 6px 0;
+}
+
+
