@@ -29,7 +29,9 @@ TrendyBay is a responsive and modern e-commerce web application built with React
 🧠 Optimized Redux Slices, Modular Code Structure
 -------------------------------------------------------------------------------------
 🧠 Technologies Used
-Technology	Purpose
+
+Technology	Purpose-
+
 React	UI Library for building components
 Redux Toolkit	Centralized state management
 React-Slick	Carousel for banners
