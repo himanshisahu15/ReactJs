@@ -1,0 +1,65 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Italianno&display=swap');
+
+.container {
+  text-align: center;
+  /* padding: 12px; */
+ width: 100%;
+  margin: auto;
+}
+
+.heading {
+    margin: 10px;
+    margin-bottom: 0px;
+   font-family: 'Italianno' ;
+  font-size: 150px;
+  color: #333;
+
+  font-weight: 100;
+}
+
+.form {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-bottom: 50px;
+
+}
+
+.input {
+  padding: 20px;
+  font-size: 16px;
+  width: 30%;
+  min-width: 200px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+.button {
+    width: 150px;
+  padding:  15px;
+  font-size: 16px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: #2c9d47;
+}
+
+.mealList {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 35px;
+  justify-content: center;
+}
+
+.message {
+  margin-top: 10px;
+  font-weight: bold;
+  color: #f90505;
+}
