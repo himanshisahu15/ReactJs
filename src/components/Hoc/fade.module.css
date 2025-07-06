@@ -1,0 +1,39 @@
+
+/* Wrapper overlay */
+.modalOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  transition: background-color 0.3s ease-in-out;
+  padding: 20px;
+}
+
+/* Theme variants */
+.darkTheme {
+  background-color: rgba(0, 0, 0, 0.85);
+}
+
+.LightTheme {
+  background-color: rgba(255, 255, 255, 0.9);
+}
+
+/* Fade-in animation */
+.fadeIn {
+  animation: fadeIn 0.4s ease-in-out forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
