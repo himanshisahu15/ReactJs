@@ -11,6 +11,7 @@ function App() {
  
   const [showCart, setShowCart] = useState(false);
 
+  //toggle func
 const handlecartIconClick=()=>{
   setShowCart((prev)=>!prev);
 }
@@ -18,10 +19,10 @@ const handlecartIconClick=()=>{
   return (
     <div>
       <Navbar onCartClick={handlecartIconClick} />
+          {/* showCart is true ,show card overlay */}
+      {showCart && <CartOverlay onClose={() => setShowCart(false)} />}
       <CarouselSlider></CarouselSlider>
       <ProductList />
-      {/* showCart is true ,show card overlay */}
-      {showCart && <CartOverlay onClose={() => setShowCart(false)} />}
     </div>
   );
 }

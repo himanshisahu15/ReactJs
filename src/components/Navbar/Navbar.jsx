@@ -42,6 +42,7 @@ export default function Navbar({ onCartClick }) {
   };
 
   const drawer = (
+    //  To close the drawer after selecting an option.
     <Box onClick={handleDrawerToggle} sx={{ textAlign: 'center' }}>
       <Typography variant="h6" sx={{ my: 2 }}>
         TrendyBay
@@ -58,7 +59,9 @@ export default function Navbar({ onCartClick }) {
             </ListItemButton>
           </ListItem>
         ))}
+
         <ListItem disablePadding>
+
           <ListItemButton sx={{ textAlign: 'center' }} onClick={onCartClick}>
 
             {/* cart icon and badge */}
@@ -78,6 +81,7 @@ export default function Navbar({ onCartClick }) {
       <CssBaseline />
       <AppBar component="nav" position="fixed">
         <Toolbar>
+          {/* hamburger for mobile view */}
           <IconButton
             color="inherit"
             edge="start"
@@ -91,6 +95,7 @@ export default function Navbar({ onCartClick }) {
           </Typography>
 
           <Box sx={{ display: { xs: 'none', sm: 'flex' }, alignItems: 'center', gap: 2 }}>
+          {/* for nav bar */}
             {navItems.map((item) => (
               <Button
                 key={item}
@@ -116,6 +121,7 @@ export default function Navbar({ onCartClick }) {
         <Drawer
           variant="temporary"
           open={mobileOpen}
+          // taps outside the drawer
           onClose={handleDrawerToggle}
           ModalProps={{ keepMounted: true }}
           sx={{

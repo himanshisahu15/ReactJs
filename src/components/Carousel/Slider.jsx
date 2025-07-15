@@ -1,4 +1,3 @@
-import React from 'react';
 import Slider from 'react-slick';
 import styled from 'styled-components';
 import img1 from '../../assets/freestocks-_3Q3tsJ01nc-unsplash.jpg';
@@ -60,12 +59,13 @@ const CarouselSlider = () => {
     slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 2000,
-   
+   arrows:true,
   };
 
   return (
     <>
       <GlobalStyle /> 
+   
     <CarouselWrapper>
       <Slider {...settings}>
         {images.map((item, index) => (

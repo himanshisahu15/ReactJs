@@ -7,8 +7,11 @@ import {
 import style from '../Product/product.module.css';
 
 const Product = ({ product }) => {
+  
   const dispatch = useDispatch();
+ 
   const cart = useSelector((state) => state.cart.cart);
+ //Checks  the  product is already in the cart.
   const existingItem = cart.find((item) => item.id === product.id);
 
   return (

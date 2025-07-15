@@ -15,7 +15,7 @@ const ConfirmationCard = ({ onClose }) => {
         />
         <h2 className={styles.title}>Congratulations</h2>
         
-        <p className={styles.empty}>your order is confirmed!!<br></br>Thank you for shopping with us.</p>
+        <p className={styles.empty}>Your order is confirmed!!<br></br>Thank you for shopping with us.</p>
         <button className={styles.confirmBtn} onClick={onClose}>
           Continue
         </button>

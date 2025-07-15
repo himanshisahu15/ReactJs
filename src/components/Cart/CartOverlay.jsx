@@ -14,14 +14,16 @@ const CartOverlay = ({ onClose }) => {
   const dispatch = useDispatch();
   const total = cart.reduce((acc, item) => acc + item.quantity * item.discountedPrice, 0);
 
+  //for confirm order card overlay
   const [orderConfirmed, setOrderConfirmed] = useState(false);
+
 
   const handleOrderConfirm = () => {
     setOrderConfirmed(true);
     dispatch(clearCart());
   };
 
-  //  Return only the confirmation card when confirmed
+  //  Return  confirmationCard when user click confirme order
   if (orderConfirmed) {
     return <ConfirmationCard onClose={onClose} />;
   }
@@ -37,8 +39,11 @@ const CartOverlay = ({ onClose }) => {
         ) : (
           <>
             <div className={styles.itemList}>
+
               {cart.map((item) => (
+
                 <div className={styles.item} key={item.id}>
+                  
                   <img src={item.image} alt={item.name} className={styles.image} />
 
                   <div className={styles.details}>
