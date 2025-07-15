@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 ## 📘 Project Theory & Key Concepts
 
 This React-based e-commerce routing project demonstrates a wide range of **React ecosystem capabilities** including routing, lazy loading, Redux state management, dynamic API fetching, and responsive design. Below are the main concepts implemented in this application:
