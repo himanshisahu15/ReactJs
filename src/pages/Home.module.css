@@ -22,6 +22,15 @@
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   transition: transform 0.2s ease;
 }
+.search {
+  padding: 10px;
+  font-size: 16px;
+  margin: 20px auto;
+  width: 300px;
+  display: block;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
 
 .card:hover {
   transform: scale(1.03);

@@ -2,18 +2,18 @@ import React, { useRef, useEffect } from 'react';
 import styles from './Contact.module.css';
 
 const Contact = () => {
-  const nameRef = useRef();
+  // const nameRef = useRef();
 
-  useEffect(() => {
-    nameRef.current.focus();
-  }, []);
+  // useEffect(() => {
+  //   nameRef.current.focus();
+  // }, []);
 
   return (
     <div className={styles.container}>
       <h2>📞 Contact Us</h2>
 
       <input
-        ref={nameRef}
+        // ref={nameRef}
         placeholder="Enter your name"
         className={styles.input}
       />
