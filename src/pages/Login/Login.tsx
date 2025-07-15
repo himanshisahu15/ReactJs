@@ -5,18 +5,18 @@ import { useNavigate } from 'react-router-dom';
 
 const Login = () => {
   const navigate = useNavigate();
+  const validCredentials = {
+    email: 'himanshi@gmail.com',
+    password: '12345'
+  };
 
-  const [email, setEmail] = useState<string>('');
-  const [password, setPassword] = useState<string>('');
+  const [email, setEmail] = useState<string>(validCredentials.email);
+  const [password, setPassword] = useState<string>(validCredentials.password);
   const [showPassword, setShowPassword] = useState<boolean>(false);
   const [showHelp, setShowHelp] = useState<boolean>(false);
   const [showDetails, setShowDetails] = useState<boolean>(false);
   const [errors, setErrors] = useState<{ email?: string; password?: string }>({});
 
-  const validCredentials = {
-    email: 'himanshi@gmail.com',
-    password: '12345'
-  };
 
   const validateEmail = (email: string) => {
     const regex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;

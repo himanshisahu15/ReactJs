@@ -2,9 +2,8 @@
 
 A full-featured clone of the Amazon Prime Video UI built using **React + TypeScript + Tailwind CSS + Vite** and powered by **TMDB API** for movie data. The app includes dynamic sliders, top 10 charts, responsive navbar, login/register with localStorage, and lazy-loaded movie sections — all designed for a smooth OTT-style experience.
 
----
 
-##  Features
+## Features
 
 -  **Authentication**
   - Register/Login with email & password (stored in localStorage)
@@ -15,7 +14,9 @@ A full-featured clone of the Amazon Prime Video UI built using **React + TypeScr
   - Real-time debounced search powered by TMDB
   - Poster cards with fallback for missing images
 
+
 -  **Movie Display**
+
   - Featured carousel (slider) for popular movies
   - Movie categories like:
     - Top Rated
@@ -32,7 +33,8 @@ A full-featured clone of the Amazon Prime Video UI built using **React + TypeScr
   - Clicking “More Details” opens a separate movie detail page
   - Shows spinner with black background during lazy-load
 
--  **Reusable Architecture**
+- **Reusable Architecture**
+
   - Custom `useData` hook for TMDB fetching
   - Modular components (`Navbar`, `Slider`, `MovieSliderRow`, `Top10Movies`, etc.)
 
@@ -147,16 +149,17 @@ VITE_HORROR_MOVIES_URL=https://api.themoviedb.org/3/discover/movie?with_genres=2
 
 📸 UI Preview
 
- Amazon-style slider
+Amazon-style slider
 
- Full search modal
+Full search modal
 
- Top 10 list
+Top 10 list
 
- Lazy-loaded rows
+Lazy-loaded rows
 
- Movie cards with detail page
+Movie cards with detail page
 
- Mobile responsive
+Mobile responsive
+
 
 -------------------------

@@ -64,11 +64,11 @@ const handlePlay = () => {
           </div>
 
 
-          <div className="text-sm space-x-4">
+          <div className="text-md space-x-5">
             {movie.genres?.map((genre: any) => (
               <span
                 key={genre.id}
-                className="bg-white/10 px-2 py-1 rounded text-white text-xs"
+                className="backdrop-blur-md bg-white/10 border border-white/20 text-white rounded-xl shadow-2xl  z-50 transition-all duration-300 px-3 py-3 text-sm hover:bg-white hover:text-black"
               >
                 {genre.name}
               </span>
