@@ -1,23 +1,23 @@
-# 🖼️ React Class-Based Image Gallery
+#  React Class-Based Image Gallery
 
 A beautiful and functional **Image Gallery app** built using **React Class Components**. This project includes core React concepts like state management, lifecycle methods, and also demonstrates the use of a **Higher-Order Component (HOC)** to enhance the modal feature.
 
 ---
 
-## 🚀 Features
+##  Features
 
-- 📸 Display images in a responsive grid
-- ➕ Add new images via form
-- ❌ Delete existing images
-- 🪟 Click on an image to view a full-size modal
-- 🎯 **Modal enhanced with HOC**:
+-  Display images in a responsive grid
+-  Add new images via form
+-  Delete existing images
+-  Click on an image to view a full-size modal
+-  **Modal enhanced with HOC**:
   - Fade-in animation
   - Theme toggling (`dark` / `light`)
   - Backdrop click handling
 
 ---
 
-## 🧠 Tech Stack
+##  Tech Stack
 
 - **React (Class Components)**
 - **CSS Modules** for scoped styling
@@ -26,14 +26,14 @@ A beautiful and functional **Image Gallery app** built using **React Class Compo
 
 ---
 
-🧩 HOC: addFeature()
+ HOC: addFeature()
 The addFeature() HOC enhances the modal with:
 
-🎨 Theme switching (dark/light)
+ Theme switching (dark/light)
 
-🎞️ Fade-in animation
+ Fade-in animation
 
-🛡️ Prevents closing modal when clicking inside modal box
+ Prevents closing modal when clicking inside modal box
 
 
 const Model = addFeature(BaseModel);
