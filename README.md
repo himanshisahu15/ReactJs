@@ -1,18 +1,18 @@
-# 🎵 MusicCard React Project
+#  MusicCard React Project
 
 This project is a simple yet visually appealing music-themed card UI built using **React**. It demonstrates the use of both **CSS Modules** and **styled-components** in the same component, showing how to integrate scoped CSS and dynamic styling together.
 
 
-## 🚀 Features
+##  Features
 
-- 🎨 Styled music card layout using **CSS Modules**
-- 🧩 Dynamic image switching using **styled-components**
-- 👇 Interactive button to change card image
-- 📱 Responsive layout using Flexbox
-- 🔁 Combined usage of CSS Modules and styled-components
+-  Styled music card layout using **CSS Modules**
+-  Dynamic image switching using **styled-components**
+-  Interactive button to change card image
+-  Responsive layout using Flexbox
+-  Combined usage of CSS Modules and styled-components
 
 
-## 📁 Project Structure
+##  Project Structure
 src/
 ├── assets/ # Local images used in the card
 │ ├── img1.jpg
@@ -32,7 +32,7 @@ src/
 └── index.js
 
 
-## 🧑‍💻 Technologies Used
+##  Technologies Used
 
 - React
 - CSS Modules (`MyCard.module.css`)
@@ -40,7 +40,7 @@ src/
 - ES6+ JavaScript
 
 
-### ✅ CSS Modules
+###  CSS Modules
 Used in `MyCard.module.css` to style:
 - Layout
 - Typography
