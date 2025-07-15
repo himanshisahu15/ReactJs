@@ -1,21 +1,21 @@
-# Amazon Prime Video Clone 🎬
+# Amazon Prime Video Clone 
 
 A full-featured clone of the Amazon Prime Video UI built using **React + TypeScript + Tailwind CSS + Vite** and powered by **TMDB API** for movie data. The app includes dynamic sliders, top 10 charts, responsive navbar, login/register with localStorage, and lazy-loaded movie sections — all designed for a smooth OTT-style experience.
 
 ---
 
-## 🚀 Features
+##  Features
 
-- 🔐 **Authentication**
+-  **Authentication**
   - Register/Login with email & password (stored in localStorage)
   - Conditional navbar (login, profile, logout)
 
-- 🔍 **Search**
+-  **Search**
   - Full-screen search modal triggered from navbar
   - Real-time debounced search powered by TMDB
   - Poster cards with fallback for missing images
 
-- 🎞️ **Movie Display**
+-  **Movie Display**
   - Featured carousel (slider) for popular movies
   - Movie categories like:
     - Top Rated
@@ -24,21 +24,21 @@ A full-featured clone of the Amazon Prime Video UI built using **React + TypeScr
     - Top 10 chart (with numbering)
   - Lazy loading via `IntersectionObserver` (`LazySection`)
 
-- 📱 **Responsive Design**
+-  **Responsive Design**
   - Tailwind-powered mobile layout
   - Hidden sidebar/navbar menus on smaller screens
 
-- 🌀 **Movie Details**
+-  **Movie Details**
   - Clicking “More Details” opens a separate movie detail page
   - Shows spinner with black background during lazy-load
 
-- 📦 **Reusable Architecture**
+-  **Reusable Architecture**
   - Custom `useData` hook for TMDB fetching
   - Modular components (`Navbar`, `Slider`, `MovieSliderRow`, `Top10Movies`, etc.)
 
 ---
 
-## 🛠️ Tech Stack
+##  Tech Stack
 
 - **React + TypeScript** (Vite)
 - **Tailwind CSS**
@@ -50,9 +50,9 @@ A full-featured clone of the Amazon Prime Video UI built using **React + TypeScr
 ---
 
 
-## 🧠 Logical Flow & Component Breakdown
+##  Logical Flow & Component Breakdown
 
-### 🧩 `Navbar.tsx`
+###  `Navbar.tsx`
 - Shows primary navigation
 - Handles login/logout state from `localStorage`
 - Includes a search icon → triggers `<SearchModal />`
@@ -60,7 +60,7 @@ A full-featured clone of the Amazon Prime Video UI built using **React + TypeScr
 
 ---
 
-### 🧩 `SearchModal.tsx`
+###  `SearchModal.tsx`
 - Fullscreen overlay modal triggered by navbar
 - Uses `useRef` to focus input on open
 - Debounced API calls (`setTimeout`)
@@ -68,14 +68,14 @@ A full-featured clone of the Amazon Prime Video UI built using **React + TypeScr
 
 ---
 
-### 🧩 `Slider/Slider.tsx`
+###  `Slider/Slider.tsx`
 - Main featured movie slider using `react-slick`
 - Dynamically styled headings via `fontStyles.ts`
 - Buttons: “Watch Now” and “More Details” (routes to movie detail)
 
 ---
 
-### 🧩 `MovieSliderRow.tsx`
+###  `MovieSliderRow.tsx`
 - Reusable component for horizontal sliders like "Top Rated", "Kids", etc.
 - Props:
   - `title`, `fetchUrl`, `tag`, `load` (for lazy)
@@ -84,26 +84,26 @@ A full-featured clone of the Amazon Prime Video UI built using **React + TypeScr
 
 ---
 
-### 🧩 `Top10Movies.tsx`
+###  `Top10Movies.tsx`
 - Shows Top 10 movies with styled numbered cards
 - Lazy-loaded via `LazySection`
 
 ---
 
-### 🧩 `LazyComponent/LazyComponent.tsx`
+###  `LazyComponent/LazyComponent.tsx`
 - Wrapper component using `IntersectionObserver`
 - Accepts `render={(visible) => JSX}` to conditionally render sliders only when visible
 
 ---
 
-### 🧩 `MovieDetail.tsx`
+###  `MovieDetail.tsx`
 - Uses `useParams()` to get movie ID
 - Fetches full movie info from TMDB
 - Displays loading spinner on initial load
 
 ---
 
-### 🧩 `useData` Hook
+###  `useData` Hook
 
 const finalUrl = url.includes("page=")
   ? url
@@ -120,7 +120,7 @@ append: false → fresh fetch
 
 ---
 
-🔍 Search Logic
+ Search Logic
 Debounced search after 3 seconds using setTimeout
 
 inputRef.focus() ensures the field stays focused
@@ -147,16 +147,16 @@ VITE_HORROR_MOVIES_URL=https://api.themoviedb.org/3/discover/movie?with_genres=2
 
 📸 UI Preview
 
-✅ Amazon-style slider
+ Amazon-style slider
 
-✅ Full search modal
+ Full search modal
 
-✅ Top 10 list
+ Top 10 list
 
-✅ Lazy-loaded rows
+ Lazy-loaded rows
 
-✅ Movie cards with detail page
+ Movie cards with detail page
 
-✅ Mobile responsive
+ Mobile responsive
 
 -------------------------
